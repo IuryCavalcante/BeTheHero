@@ -19,7 +19,7 @@ module.exports = {
                                         'ongs.whatsapp']);
         
         response.header('X-Total-Count', count['count(*)']);
-        return response.json({incidents});
+        return response.json(incidents);
     },
 
     async delete(request,response){
